@@ -25,3 +25,12 @@ pipeline
       }
     }
   }  
+
+  post
+      {
+        always
+        {
+          emailtext body: 'Summary' , subject: 'Pipeline Status' , to: 'sdpatil764@gmail.com'
+        }
+      }
+    }  
